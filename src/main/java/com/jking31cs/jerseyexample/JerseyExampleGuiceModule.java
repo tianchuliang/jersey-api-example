@@ -19,6 +19,7 @@ import static com.googlecode.objectify.ObjectifyService.ofy;
 public class JerseyExampleGuiceModule extends AbstractModule {
     @Override
     protected void configure() {
+        // bind(UserStore.class);
         bind(TodoListStore.class);
         bind(ObjectifyFilter.class).in(Singleton.class);
     }
