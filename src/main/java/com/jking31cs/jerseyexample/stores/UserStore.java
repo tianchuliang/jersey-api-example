@@ -11,7 +11,6 @@ import java.util.List;
  * User store object that updates and retrieves information that's on the Datastore.
  */
 public class UserStore {
-
     private final Objectify objectify;
 
     @Inject
