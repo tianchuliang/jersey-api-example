@@ -18,6 +18,7 @@ import com.jking31cs.jerseyexample.stores.UserStore;
 
 @Path("api/users")
 public class UserWebService{
+
 	private final UserStore store;
 
 	@Inject 
@@ -51,6 +52,7 @@ public class UserWebService{
 	@Produces(MediaType.APPLICATION_JSON)
 	public User updateUser(@PathParam("id") Long id, User user){
 		return store.save(user);
+		
 		// User old = store.get(id);
 		// old.setName(user.getName());
 		// old.setEmail(user.getEmail());
